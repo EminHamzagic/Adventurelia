@@ -37,7 +37,7 @@
     </nav>
     <section id="home">
         <div class="home_txt">
-            <h1>Travell the World And Experience Its Wonders</h1>
+            <h1>Travel the World And Experience Its Wonders</h1>
             <p>Explore our <a href="#services">Services</a> or immediately contact us to book a trip:</p>
             <button>Contact Us</button>
         </div>
@@ -99,10 +99,83 @@
             </div>
             <div class="services_container">
                 <div class="service_option">
-
+                    <button onclick="op_btn1()" class="option" id="op1">Airlines</button>
+                    <button onclick="op_btn2()" class="option" id="op2">Car Rentals</button>
+                    <button onclick="op_btn3()" class="option" id="op3">Hotels</button>
+                    <button onclick="op_btn4()" class="option" id="op4">Railways</button>
+                    <button onclick="op_btn5()" class="option" id="op5">Guide Books</button>
+                    <!-- <div class="option"><p>Airlines</p></div>
+                    <div class="option"><p>Car Rentals</p></div>
+                    <div class="option"><p>Hotels</p></div>
+                    <div class="option"><p>Railways</p></div>
+                    <div class="option"><p>Guide Books</p></div> -->
                 </div>
                 <div class="service_info">
-
+                    <div id="op_info1" class="option_info active_option">
+                        <div class="info_img">
+                            <img src="https://images.unsplash.com/photo-1583150647472-d239652a12f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80">
+                        </div>
+                        <div class="info_txt">
+                            <div class="info_title"><h3>Airlines</h3></div>
+                            <div class="itxt">
+                                <p><i class="fas fa-caret-right"></i>Virtutibus occurreret ab perfectius ob majestatis ex ei. Sex ego uno locum lor clara istas. Haustam organis veritas pro sed.</p>
+                                <p><i class="fas fa-caret-right"></i>Extensarum imperfecta vox per propugnent cap utilitatis ero. Tot callidus venturum pictores subducam appareat hae ubi.</p>
+                                <p><i class="fas fa-caret-right"></i>Cunctaque admonitus tentassem to ii soliditas ha consistat concludam ad. Est ritas sae aut istam paulo reges terea serie fas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="op_info2" class="option_info">
+                        <div class="info_img">
+                            <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+                        </div>
+                        <div class="info_txt">
+                            <div class="info_title"><h3>Car Rentals</h3></div>
+                            <div class="itxt">
+                                <p><i class="fas fa-caret-right"></i>Deo positio cui sua nia mutetur deesset. Obvium solius quarta sic cupere falsas vul magnum iis.</p>
+                                <p><i class="fas fa-caret-right"></i>Fallere mirabar aliquid ha defectu to membris. Apprehendo quaedamque quantumvis ex confirmari se divisibile vi.</p>
+                                <p><i class="fas fa-caret-right"></i>Sap industriam sequuturum institutum usu hauriantur non via continetur. Cau possidendi familiarem conservant accidentia ego praevidere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="op_info3" class="option_info">
+                        <div class="info_img">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                        </div>
+                        <div class="info_txt">
+                            <div class="info_title"><h3>Hotels</h3></div>
+                            <div class="itxt">
+                                <p><i class="fas fa-caret-right"></i>Per excludere indulgere desuescam sufficiat dat infirmari praeditis jam. Ad mo se pugnare et putarem discere quiddam probent.</p>
+                                <p><i class="fas fa-caret-right"></i>Mutationum rationibus existentia mea persuadeor operatione ens agi cavillandi. Imbecillia praecipuas sui sed tum defectibus fal aucupantur.</p>
+                                <p><i class="fas fa-caret-right"></i>Factas fontem multum iisdem vos etc gustum nul pendam. Famam alios primo to motum venit im me. Omniscium cau coloribus corporeis pro sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="op_info4" class="option_info">
+                        <div class="info_img">
+                            <img src="https://images.unsplash.com/photo-1514828260103-1e9bf9a58446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                        </div>
+                        <div class="info_txt">
+                            <div class="info_title"><h3>Railways</h3></div>
+                            <div class="itxt">
+                                <p><i class="fas fa-caret-right"></i>Favis sumne at in gi oriri video alium. Alicujus quo qui dei vos continet timerent decipior. Is inventae tactiles ad multarum insomnia gi.</p>
+                                <p><i class="fas fa-caret-right"></i>Qua ita jam lucem nullo fidei hodie rebus. Ipse novo soni ipsa mali ad post gi.</p>
+                                <p><i class="fas fa-caret-right"></i>Probatur occurrit occurrat me an cogitans sensibus se. Ei de vitae se velut certi ea. Assidere loquendo ab corporea ex mo ii quolibet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="op_info5" class="option_info">
+                        <div class="info_img">
+                            <img src="https://images.unsplash.com/photo-1560278674-4a17b808730a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                        </div>
+                        <div class="info_txt">
+                            <div class="info_title"><h3>Guide Books</h3></div>
+                            <div class="itxt">
+                                <p><i class="fas fa-caret-right"></i>Ausi sint vis seu illi. Rantem rem figere aetate sentio mei urgeat gaudet suo. Is mo generis ne exhibet fictile nostrae mutatur memores.</p>
+                                <p><i class="fas fa-caret-right"></i>Nonnulli ero vim competit impulsum loquendi studiose fas seu contendo. Jaceo ad solem eo quare mutuo falsi lente ex.</p>
+                                <p><i class="fas fa-caret-right"></i>Evidenter de me referebam attingere is ad. In foret longo visum ab debeo ad. Rum nexum solam nonne error nulla mox duo hos.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
