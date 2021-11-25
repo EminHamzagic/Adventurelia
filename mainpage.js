@@ -1,7 +1,9 @@
 let navbar = 0 
+// var h 
 
 function nav_color(){
     navbar = document.getElementById('nav')
+    // h = document.getElementsByClassName('destination_info')
 }
 
 window.onload = nav_color
@@ -81,4 +83,28 @@ function op_btn5(){
     }
     document.getElementById('op5').style.color = 'black'
     document.getElementById('op5').style.backgroundColor = 'rgb(186, 189, 194)'
+}
+
+
+var slideIndex = 0;
+
+function showSlides() {
+    var i
+    var slides = document.getElementsByClassName("destination_info")
+    var dots = document.getElementsByClassName("dot")
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"
+    }
+    slideIndex++
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "")
+    }
+    slides[slideIndex-1].style.display = "flex"
+    dots[slideIndex-1].className += " active"
+    setTimeout(showSlides, 2000)
+}
+
+window.onload = function(){
+    showSlides()
 }
