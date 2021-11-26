@@ -20,7 +20,7 @@
     <nav id="nav">
         <div class="logo">
             <i class="fas fa-map"></i>
-            <h1>Adventurelia</h1>
+            <h1><a href="#home">Adventurelia</a></h1>
         </div>
         <div class="nav_links">
             <ul>
@@ -28,18 +28,22 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#destinations">Destinations</a></li>
-                <li><a href="gallery">Gallery</a></li>
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </div>
         <div class="contact_btn">
-            <button>Contact Us</button>
+            <form action="#contact">
+                <button>Contact Us</button>
+            </form>
         </div>
     </nav>
     <section id="home">
         <div class="home_txt">
             <h1>Travel the World And Experience Its Wonders</h1>
             <p>Explore our <a href="#services">Services</a> or immediately contact us to book a trip:</p>
-            <button>Contact Us</button>
+            <form action="#contact">
+                <button type="submit">Contact Us</button>
+            </form>
         </div>
     </section>
     <div id="gap"></div>
@@ -271,5 +275,76 @@
             </div>
         </div>
     </section>
+    <section id="gallery">
+        <div class="section_container">
+            <div class="title_section">
+                <h1>Gallery</h1>
+            </div>
+            <div class="gallery_container">
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1612524103232-cbdd7a263230?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1563645774182-d14c97bd52fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1622046867452-ebe75ac5bbd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1608559297969-1ac48e5cec15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1602101079510-185e525d9c42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=743&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1616321741705-e9a4073af35c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1618163263728-1541c8909052?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                </div>
+                <div class="gallery_photo">
+                    <img src="https://images.unsplash.com/photo-1618475667510-bd1315b1388a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section_container">
+            <div class="title_section">
+                <h1>Contact us</h1>
+            </div>
+            <div class="contact_container">
+                <div class="contact_info">
+                    <div class="contact_info_input">
+                        <div class="row">
+                            <input placeholder="Name" type="text">
+                        </div>
+                        <div class="row">
+                            <input placeholder="Email" type="text">
+                        </div>
+                        <div class="row">
+                            <input placeholder="Subject" type="text">
+                        </div>
+                        <div class="msg_box">
+                            <textarea placeholder="Message" name="" id="txtarea" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="contact_button">
+                            <button>Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.39035568728!2d20.517711114861157!3d43.138331593589676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4756280df44152cb%3A0x5639542f707dc20b!2sGymnasium%20of%20Novi%20Pazar!5e0!3m2!1sen!2srs!4v1637950991107!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© Copyright <strong>Adventurelia</strong>. All Rights Reserved</p>
+        <div>
+            <p>Designed by</p>
+            <span><strong>Synapso</strong></span>
+        </div>    
+    </footer>
 </body>
 </html>
