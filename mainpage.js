@@ -81,7 +81,6 @@ function op_btn5(){
     document.getElementById('op5').style.backgroundColor = 'rgb(186, 189, 194)'
 }
 
-
 var slideIndex = 0;
 
 function showSlides() {
