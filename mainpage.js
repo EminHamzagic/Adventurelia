@@ -1,12 +1,8 @@
 let navbar = 0 
-// var h 
 
 function nav_color(){
     navbar = document.getElementById('nav')
-    // h = document.getElementsByClassName('destination_info')
 }
-
-window.onload = nav_color
 
 window.onscroll = function(){
     if (window.scrollY > 580) {
@@ -102,9 +98,10 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "flex"
     dots[slideIndex-1].className += " active"
-    setTimeout(showSlides, 2000)
+    setTimeout(showSlides, 2800)
 }
 
 window.onload = function(){
     showSlides()
+    nav_color()
 }

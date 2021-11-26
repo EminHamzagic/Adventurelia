@@ -427,14 +427,10 @@ section{
     width: 90%;
     height: 90%;
     display: flex;
-    animation-name: option_anim;
+    animation-name: fade_anim;
     animation-duration: 2s;
 }
 
-@keyframes option_anim{
-    from {opacity: 0.4}
-    to {opacity: 1}
-}
 
 .option_info, .info_title *{
     display: none;
@@ -532,6 +528,8 @@ section{
     width: 90%;
     height: 80%;
     display: flex;
+    animation-name: fade_anim;
+    animation-duration: 2s;
 }
 
 .destination_info_text{
@@ -607,4 +605,9 @@ section{
 
 .destination_info_img img:hover{
     transform: scale(1.06);
+}
+
+@keyframes fade_anim{
+    from {opacity: 0.4}
+    to {opacity: 1}
 }
