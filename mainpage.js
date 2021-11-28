@@ -100,7 +100,20 @@ function showSlides() {
     setTimeout(showSlides, 2800)
 }
 
+var mobile_nav
+
+function mobile_menu_close(){
+    mobile_nav.classList.remove('flex')
+    mobile_nav.classList.add('none')
+}
+
+function mobile_menu(){
+    mobile_nav.classList.remove('none')
+    mobile_nav.classList.add('flex')
+}
+
 window.onload = function(){
     showSlides()
     nav_color()
+    mobile_nav = document.getElementById('mobile_menu')
 }

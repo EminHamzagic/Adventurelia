@@ -36,6 +36,24 @@
                 <button>Contact Us</button>
             </form>
         </div>
+        <div class="mobile_nav_btn">
+            <button onclick="mobile_menu()"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="mobile_drop_menu none" id="mobile_menu">
+            <div class="mobile_nav_links">
+                <ul>
+                    <li><a href="#homediv">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+                <form action="#contact">
+                    <button type="submit">Contact Us</button>
+                </form>
+            </div>
+            <button onclick="mobile_menu_close()" class="x"><i class="fas fa-times"></i></button>
+        </div>
     </nav>
     <section id="home">
         <div class="home_txt">
@@ -108,11 +126,6 @@
                     <button onclick="op_btn3()" class="option" id="op3">Hotels</button>
                     <button onclick="op_btn4()" class="option" id="op4">Railways</button>
                     <button onclick="op_btn5()" class="option" id="op5">Guide Books</button>
-                    <!-- <div class="option"><p>Airlines</p></div>
-                    <div class="option"><p>Car Rentals</p></div>
-                    <div class="option"><p>Hotels</p></div>
-                    <div class="option"><p>Railways</p></div>
-                    <div class="option"><p>Guide Books</p></div> -->
                 </div>
                 <div class="service_info">
                     <div id="op_info1" class="option_info active_option">
